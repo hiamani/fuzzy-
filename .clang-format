@@ -1,0 +1,8 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 120
+AlignAfterOpenBracket: BlockIndent
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
