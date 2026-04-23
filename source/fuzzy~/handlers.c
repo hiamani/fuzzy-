@@ -1,10 +1,17 @@
 // Local imports
 #include "structs.h"
 
-void fuzzy_assist(t_fuzzy *f, void *b, long m, long a, char *s) {
+void fuzzy_assist(t_fuzzy *f, void *b, long m, long a, char *str) {
     if (m == 1) {
-        sprintf(s, "I am inlet %ld", a);
+        switch (a) {
+        case 0:
+            sprintf(str, "(signal) input");
+            break;
+        case 1:
+            sprintf(str, "(signal) gain");
+            break;
+        }
     } else {
-        sprintf(s, "I am outlet %ld", a);
+        sprintf(str, "(signal) output");
     }
 }
