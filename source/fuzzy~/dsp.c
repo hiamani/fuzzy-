@@ -6,6 +6,8 @@
 // Local includes
 #include "structs.h"
 
+// https://dsp.stackexchange.com/questions/13142/digital-distortion-effect-algorithm
+
 void fuzzy_perform64(
     t_fuzzy *f, t_object *dsp64, double **ins, long numins, double **outs, long numouts, long sampleframes, long flags,
     void *userparam
